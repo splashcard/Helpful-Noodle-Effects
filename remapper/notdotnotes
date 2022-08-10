@@ -1,0 +1,10 @@
+import { Difficulty, cuutDirection, dissolve, note, notesBetween, map, info} from "https://deno.land/x/remapper@2.0.2/src/mod.ts";
+//a really dumb thing that takes the dots off of your notes 
+
+
+
+function nodot(start: number, dur: number) {
+    notesBetween(start, dur, (cutDirection = 8) =>{
+        note.animate.dissolvearrow = [0,0]
+    })
+}
