@@ -3,8 +3,9 @@ import { Difficulty, cuutDirection, dissolve, note, notesBetween, map, info} fro
 
 
 
-function nodot(start: number, dur: number) {
-    notesBetween(start, dur, (cutDirection = 8) =>{
-        note.animate.dissolvearrow = [0,0]
-    })
+map.notesBetween(x=>{
+    if(x.cutDirection == 8){
+    note.animate.dissolvearrow = [0,0]
 }
+})
+    
